@@ -1,0 +1,159 @@
+# UPD-110
+# Tajik translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-08-20 02:39+0500\n"
+"PO-Revision-Date: 2025-08-20 02:27+0500\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: tg\n"
+"Language-Team: tg <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+msgid "button-lang-uz"
+msgstr "🇺🇿 Узбекӣ"
+
+msgid "button-lang-ru"
+msgstr "🇷🇺 Русӣ"
+
+msgid "button-lang-tg"
+msgstr "🇹🇯 Тоҷикӣ"
+
+msgid "button-main-menu"
+msgstr "🏡 Менюи асосӣ"
+
+msgid "button-back"
+msgstr "⬅️ Бозгашт"
+
+msgid "button-cancel"
+msgstr "❌ Бекор кардан"
+
+msgid "button-confirm"
+msgstr "✅ Тасдиқ кардан"
+
+msgid "button-start-vote"
+msgstr "🗣 Овоз додан"
+
+msgid "button-account"
+msgstr "💰 Ҳисоби ман"
+
+msgid "button-referral"
+msgstr "🔗 Реферал"
+
+msgid "button-help"
+msgstr "❓ Ёрӣ"
+
+msgid "button-send-phone"
+msgstr "📞 Ирсоли рақам"
+
+msgid "button-admin-panel"
+msgstr "🤖 Панели администратор"
+
+msgid "button-admin-stats"
+msgstr "📊 Омор"
+
+msgid "button-admin-messaging"
+msgstr "📢 Ирсоли паём"
+
+msgid "button-admin-settings"
+msgstr "⚙️ Танзимот"
+
+msgid "welcome-message"
+msgstr "🙋‍♂️ Хуш омадед! Барои истифодаи бот, аз менюи поён истифода баред."
+
+msgid "language-changed-message"
+msgstr "✅ Забони бот ба Тоҷикӣ иваз карда шуд."
+
+msgid "unknown-command-message"
+msgstr "❓ Фармони номаълум. Ба менюи асосӣ баргардед."
+
+msgid "functionality-in-development"
+msgstr "🛠️ Ин функсия ҳоло дар ҳоли таҳия аст."
+
+msgid "error-occurred"
+msgstr "❗️ Хатогӣ рӯй дод. Лутфан, бори дигар кӯшиш кунед."
+
+msgid "main-menu-message"
+msgstr "🏡 Менюи асосӣ."
+
+msgid "ask-phone-number"
+msgstr ""
+"✍️ Лутфан, рақами телефони худро барои"
+" овоздиҳӣ ворид кунед. Намуна: 911234567"
+
+msgid "phone-number-invalid"
+msgstr ""
+"🚫 Формати рақами телефон нодуруст аст."
+" Лутфан, дар формати +9989X XXX XX"
+" XX ворид кунед."
+
+msgid "ask-captcha-result"
+msgstr "🤖 Барои амният, лутфан рақамҳои дар расм нишондодашударо ворид кунед."
+
+msgid "captcha-invalid"
+msgstr "❌ CAPTCHA нодуруст аст. Лутфан, бори дигар кӯшиш кунед."
+
+msgid "ask-otp-code"
+msgstr ""
+"⏳ Лутфан, рамзи 6-рақами SMS, ки "
+"ба телефони шумо фиристода шудааст, "
+"ворид кунед."
+
+msgid "otp-invalid"
+msgstr "❌ Рамзи SMS нодуруст аст. Лутфан, бори дигар кӯшиш кунед."
+
+msgid "phone-already-used"
+msgstr "⚠️ Ин рақами телефон аллакай барои овоздиҳӣ истифода шудааст."
+
+msgid "vote-successful"
+msgstr ""
+"✅ Овози шумо бомуваффақият қабул шуд!"
+" Ба тавозуни шумо { $amount } "
+"сум илова карда шуд."
+
+msgid "api-error"
+msgstr "❗️ Дар сайти Openbudget хатогӣ рӯй дод. Лутфан, баъдтар кӯшиш кунед."
+
+msgid "account-info-message"
+msgstr "💰 Тавозуни ҷории шумо: { $balance } сум."
+
+msgid "referral-info-message"
+msgstr ""
+"🔗 Дӯстонатонро бо истиноди реферали худ"
+" даъват кунед ва пул кор кунед!\n"
+""
+"Барои ҳар як реферал { $amount } сум мегиред.\n"
+"\n"
+"Истиноди шумо:\n"
+"{ $link }"
+
+msgid "admin-panel-message"
+msgstr "🔐 Панели администратор."
+
+msgid "stats-message"
+msgstr "📊 Омор:"
+
+msgid "send-notification-message"
+msgstr "📢 Лутфан, паёмеро барои фиристодан ба корбарон ворид кунед."
+
+msgid "notification-sent-message"
+msgstr "✅ Паём ба корбарон фиристода шуд."
+
+msgid "cancel-action"
+msgstr "❌ Амал бекор карда шуд."
+
+msgid "confirm-action"
+msgstr "✅ Тасдиқ шуд."
+
+msgid "help-message"
+msgstr "❓ Ёрдам оид ба истифодаи бот."
+

@@ -1,0 +1,153 @@
+# UPD-109
+# Russian translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-08-20 02:39+0500\n"
+"PO-Revision-Date: 2025-08-20 02:27+0500\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+msgid "button-lang-uz"
+msgstr "🇺🇿 Узбекский"
+
+msgid "button-lang-ru"
+msgstr "🇷🇺 Русский"
+
+msgid "button-lang-tg"
+msgstr "🇹🇯 Таджикский"
+
+msgid "button-main-menu"
+msgstr "🏡 Главное меню"
+
+msgid "button-back"
+msgstr "⬅️ Назад"
+
+msgid "button-cancel"
+msgstr "❌ Отмена"
+
+msgid "button-confirm"
+msgstr "✅ Подтвердить"
+
+msgid "button-start-vote"
+msgstr "🗣 Голосовать"
+
+msgid "button-account"
+msgstr "💰 Мой счёт"
+
+msgid "button-referral"
+msgstr "🔗 Рефералы"
+
+msgid "button-help"
+msgstr "❓ Помощь"
+
+msgid "button-send-phone"
+msgstr "📞 Отправить номер"
+
+msgid "button-admin-panel"
+msgstr "🤖 Админ-панель"
+
+msgid "button-admin-stats"
+msgstr "📊 Статистика"
+
+msgid "button-admin-messaging"
+msgstr "📢 Рассылка"
+
+msgid "button-admin-settings"
+msgstr "⚙️ Настройки"
+
+msgid "welcome-message"
+msgstr "🙋‍♂️ Добро пожаловать! Используйте меню ниже, чтобы начать."
+
+msgid "language-changed-message"
+msgstr "✅ Язык бота изменен на Русский."
+
+msgid "unknown-command-message"
+msgstr "❓ Неизвестная команда. Вернитесь в главное меню."
+
+msgid "functionality-in-development"
+msgstr "🛠️ Эта функция находится в разработке."
+
+msgid "error-occurred"
+msgstr "❗️ Произошла ошибка. Пожалуйста, попробуйте еще раз."
+
+msgid "main-menu-message"
+msgstr "🏡 Главное меню."
+
+msgid "ask-phone-number"
+msgstr ""
+"✍️ Пожалуйста, введите ваш номер "
+"телефона для голосования. Пример: 911234567"
+
+msgid "phone-number-invalid"
+msgstr ""
+"🚫 Неверный формат номера. Пожалуйста, "
+"введите в формате +9989X XXX XX "
+"XX."
+
+msgid "ask-captcha-result"
+msgstr "🤖 В целях безопасности, пожалуйста, введите цифры с картинки."
+
+msgid "captcha-invalid"
+msgstr "❌ Неверная CAPTCHA. Пожалуйста, попробуйте еще раз."
+
+msgid "ask-otp-code"
+msgstr "⏳ Пожалуйста, введите 6-значный SMS-код, отправленный на ваш телефон."
+
+msgid "otp-invalid"
+msgstr "❌ Неверный SMS-код. Пожалуйста, попробуйте еще раз."
+
+msgid "phone-already-used"
+msgstr "⚠️ Этот номер телефона уже использовался для голосования."
+
+msgid "vote-successful"
+msgstr "✅ Ваш голос успешно принят! На ваш баланс добавлено { $amount } сум."
+
+msgid "api-error"
+msgstr "❗️ На сайте Openbudget произошла ошибка. Пожалуйста, попробуйте позже."
+
+msgid "account-info-message"
+msgstr "💰 Ваш текущий баланс: { $balance } сум."
+
+msgid "referral-info-message"
+msgstr ""
+"🔗 Приглашайте друзей по вашей "
+"реферальной ссылке и зарабатывайте деньги!"
+"\n"
+"За каждого реферала вы получите { $amount } сум.\n"
+"\n"
+"Ваша ссылка:\n"
+"{ $link }"
+
+msgid "admin-panel-message"
+msgstr "🔐 Админ-панель."
+
+msgid "stats-message"
+msgstr "📊 Статистика:"
+
+msgid "send-notification-message"
+msgstr "📢 Пожалуйста, введите сообщение для отправки пользователям."
+
+msgid "notification-sent-message"
+msgstr "✅ Сообщение отправлено пользователям."
+
+msgid "cancel-action"
+msgstr "❌ Действие отменено."
+
+msgid "confirm-action"
+msgstr "✅ Подтверждено."
+
+msgid "help-message"
+msgstr "❓ Помощь по использованию бота."
+

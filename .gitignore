@@ -1,0 +1,23 @@
+# FIX-155
+# .gitignore
+
+# Python bilan bog'liq standart fayllar
+__pycache__/
+*.pyc
+
+# Virtual muhitlar
+venv/
+.venv/
+
+# Log fayllar
+logs/
+*.log
+
+# Ma'lumotlar bazasi fayllari
+*.sqlite
+*.sqlite3
+*.db
+
+# OSga oid fayllar (Mac, Windows)
+.DS_Store
+Thumbs.db

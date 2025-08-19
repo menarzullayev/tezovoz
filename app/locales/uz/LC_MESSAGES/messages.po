@@ -1,0 +1,156 @@
+# UPD-108
+# Uzbek translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-08-20 02:39+0500\n"
+"PO-Revision-Date: 2025-08-20 02:27+0500\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: uz\n"
+"Language-Team: uz <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+msgid "button-lang-uz"
+msgstr "🇺🇿 O'zbek"
+
+msgid "button-lang-ru"
+msgstr "🇷🇺 Русский"
+
+msgid "button-lang-tg"
+msgstr "🇹🇯 Тоҷикӣ"
+
+msgid "button-main-menu"
+msgstr "🏡 Bosh menyu"
+
+msgid "button-back"
+msgstr "⬅️ Ortga"
+
+msgid "button-cancel"
+msgstr "❌ Bekor qilish"
+
+msgid "button-confirm"
+msgstr "✅ Tasdiqlash"
+
+msgid "button-start-vote"
+msgstr "🗣 Ovoz berish"
+
+msgid "button-account"
+msgstr "💰 Hisobim"
+
+msgid "button-referral"
+msgstr "🔗 Referal"
+
+msgid "button-help"
+msgstr "❓ Yordam"
+
+msgid "button-send-phone"
+msgstr "📞 Raqamni ulashish"
+
+msgid "button-admin-panel"
+msgstr "🤖 Admin Paneli"
+
+msgid "button-admin-stats"
+msgstr "📊 Statistika"
+
+msgid "button-admin-messaging"
+msgstr "📢 Xabar yuborish"
+
+msgid "button-admin-settings"
+msgstr "⚙️ Sozlamalar"
+
+msgid "welcome-message"
+msgstr ""
+"🙋‍♂️ Xush kelibsiz! Botimizdan foydalanish "
+"uchun quyidagi menyulardan foydalaning."
+
+msgid "language-changed-message"
+msgstr "✅ Bot tili O'zbek tiliga o'zgartirildi."
+
+msgid "unknown-command-message"
+msgstr "❓ Noma'lum buyruq. Asosiy menyuga qayting."
+
+msgid "functionality-in-development"
+msgstr "🛠️ Bu funksiya hozirda ishlanmoqda."
+
+msgid "error-occurred"
+msgstr "❗️ Xatolik yuz berdi. Iltimos, qaytadan urinib ko'ring."
+
+msgid "main-menu-message"
+msgstr "🏡 Bosh menyu."
+
+msgid "ask-phone-number"
+msgstr ""
+"✍️ Iltimos, ovoz berish uchun telefon"
+" raqamingizni kiriting. Namuna: 911234567"
+
+msgid "phone-number-invalid"
+msgstr ""
+"🚫 Telefon raqami formati noto'g'ri. "
+"Iltimos, +9989X XXX XX XX formatida "
+"kiriting."
+
+msgid "ask-captcha-result"
+msgstr "🤖 Xavfsizlik uchun, iltimos rasmda ko'rsatilgan raqamlarni kiriting."
+
+msgid "captcha-invalid"
+msgstr "❌ Captcha xato kiritildi. Iltimos, qaytadan urinib ko'ring."
+
+msgid "ask-otp-code"
+msgstr "⏳ Telefon raqamingizga yuborilgan 6 xonali SMS kodni kiriting."
+
+msgid "otp-invalid"
+msgstr "❌ SMS kod noto'g'ri. Iltimos, qaytadan urinib ko'ring."
+
+msgid "phone-already-used"
+msgstr "⚠️ Bu telefon raqami allaqachon ovoz berish uchun ishlatilgan."
+
+msgid "vote-successful"
+msgstr ""
+"✅ Ovoz muvaffaqiyatli qabul qilindi! "
+"Hisobingizga { $amount } so'm qo'shildi."
+
+msgid "api-error"
+msgstr "❗️ Openbudget saytida xatolik yuz berdi. Keyinroq urinib ko'ring."
+
+msgid "account-info-message"
+msgstr "💰 Hisobingizdagi joriy balans: { $balance } so'm."
+
+msgid "referral-info-message"
+msgstr ""
+"🔗 Referal havolangiz orqali do'stlaringizni"
+" taklif qiling va pul ishlang!\n"
+"Zar bir referal uchun { $amount } so'm beriladi.\n"
+"\n"
+"Sizning havolangiz:\n"
+"{ $link }"
+
+msgid "admin-panel-message"
+msgstr "🔐 Admin paneli."
+
+msgid "stats-message"
+msgstr "📊 Statistika:"
+
+msgid "send-notification-message"
+msgstr "📢 Foydalanuvchilarga yuboriladigan xabarni kiriting."
+
+msgid "notification-sent-message"
+msgstr "✅ Xabar foydalanuvchilarga yuborildi."
+
+msgid "cancel-action"
+msgstr "❌ Amal bekor qilindi."
+
+msgid "confirm-action"
+msgstr "✅ Tasdiqlandi."
+
+msgid "help-message"
+msgstr "❓ Botdan foydalanish bo'yicha yordam."
+
