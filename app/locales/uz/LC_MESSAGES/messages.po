@@ -1,3 +1,4 @@
+# E:\nsn\tezovoz\app\locales\uz\LC_MESSAGES\messages.po
 # UPD-108
 # Uzbek translations for PROJECT.
 # Copyright (C) 2025 ORGANIZATION
@@ -116,22 +117,22 @@ msgstr "⚠️ Bu telefon raqami allaqachon ovoz berish uchun ishlatilgan."
 msgid "vote-successful"
 msgstr ""
 "✅ Ovoz muvaffaqiyatli qabul qilindi! "
-"Hisobingizga { $amount } so'm qo'shildi."
+"Hisobingizga {amount} so'm qo'shildi."
 
 msgid "api-error"
 msgstr "❗️ Openbudget saytida xatolik yuz berdi. Keyinroq urinib ko'ring."
 
 msgid "account-info-message"
-msgstr "💰 Hisobingizdagi joriy balans: { $balance } so'm."
+msgstr "💰 Hisobingizdagi joriy balans: {balance} so'm."
 
 msgid "referral-info-message"
 msgstr ""
 "🔗 Referal havolangiz orqali do'stlaringizni"
 " taklif qiling va pul ishlang!\n"
-"Zar bir referal uchun { $amount } so'm beriladi.\n"
+"Har bir referal uchun {amount} so'm beriladi.\n"
 "\n"
 "Sizning havolangiz:\n"
-"{ $link }"
+"{link}"
 
 msgid "admin-panel-message"
 msgstr "🔐 Admin paneli."
