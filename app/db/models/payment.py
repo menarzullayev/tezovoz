@@ -1,3 +1,5 @@
+# app\db\models\payment.py
+
 # NEW-116
 from typing import Optional
 from sqlalchemy import Float, ForeignKey, String, Text, Enum

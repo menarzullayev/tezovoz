@@ -1,5 +1,5 @@
 # E:\nsn\tezovoz\app\locales\uz\LC_MESSAGES\messages.po
-# UPD-108
+# FIX-103
 # Uzbek translations for PROJECT.
 # Copyright (C) 2025 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-08-20 02:39+0500\n"
-"PO-Revision-Date: 2025-08-20 02:27+0500\n"
+"PO-Revision-Date: 2025-08-21 03:50+0500\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uz\n"
 "Language-Team: uz <LL@li.org>\n"
@@ -155,3 +155,182 @@ msgstr "✅ Tasdiqlandi."
 msgid "help-message"
 msgstr "❓ Botdan foydalanish bo'yicha yordam."
 
+msgid "account-info-message"
+msgstr ""
+"💰 Hisobim\n"
+"\n"
+"<b>Joriy balans:</b> {balance} so'm\n"
+"<b>Jami ovozlar:</b> {votes_count} ta"
+
+msgid "referral-info-message"
+msgstr ""
+"🔗 Referal Tizimi\n"
+"\n"
+"Do'stlaringizni taklif qiling va har bir muvaffaqiyatli ovoz bergan do'stingiz uchun <b>{reward_amount} so'm</b> bonus oling!\n"
+"\n"
+"Sizning shaxsiy havolangiz:\n"
+"`{referral_link}`\n"
+"\n"
+"📊 Siz taklif qilgan do'stlar soni: {referral_count} ta"
+
+msgid "new-referral-notification"
+msgstr "🎉 Tabriklaymiz! Sizning havolangiz orqali yangi do'stingiz botga qo'shildi. U birinchi marta ovoz berganida hisobingizga bonus taqdim etiladi."
+
+msgid "help-main-text"
+msgstr ""
+"❓ **Yordam Bo'limi**\n"
+"\n"
+"Assalomu alaykum! Bu bot OpenBudget loyihalariga oson va tez ovoz berish uchun mo'ljallangan.\n"
+"\n"
+"**Asosiy bo'limlar:**\n"
+"🗣 **Ovoz berish** - OpenBudget loyihasiga ovoz berish jarayonini boshlash.\n"
+"💰 **Hisobim** - Sizning joriy balansingiz va umumiy ovozlaringiz soni haqida ma'lumot.\n"
+"🔗 **Referal** - Do'stlaringizni taklif qilib, bonuslar ishlash uchun shaxsiy havolangiz.\n"
+"\n"
+"Qo'shimcha savollaringiz bo'lsa, quyidagi tugma orqali tanishing."
+
+msgid "button-show-faq"
+msgstr "❓ Tez-tez so'raladigan savollar"
+
+msgid "faq-section-title"
+msgstr "📑 Quyidagi savollardan birini tanlang:"
+
+msgid "faq-not-found"
+msgstr "Kechirasiz, bu savol bazadan topilmadi."
+
+msgid "faq-no-questions"
+msgstr "Hozircha tez-tez so'raladigan savollar mavjud emas."
+
+msgid "button-back-to-faq"
+msgstr "⬅️ Ortga"
+
+msgid "button-withdraw"
+msgstr "💸 Pul yechish"
+
+msgid "withdraw-min-amount-error"
+msgstr "❗️ Pul yechish uchun minimal summa {min_amount} so'm."
+
+msgid "ask-card-number"
+msgstr "💳 Iltimos, pul o'tkazish uchun 16 xonali karta raqamingizni kiriting (namuna: 8600123456789012)."
+
+msgid "invalid-card-number"
+msgstr "❌ Karta raqami noto'g'ri formatda kiritildi. Iltimos, 16 ta raqam kiriting."
+
+msgid "ask-amount"
+msgstr "💰 Qancha summa yechib olmoqchisiz? (namuna: 10000)"
+
+msgid "invalid-amount"
+msgstr "❌ Summa noto'g'ri kiritildi. Iltimos, faqat raqamlardan foydalaning."
+
+msgid "insufficient-funds"
+msgstr "😔 Afsuski, hisobingizda mablag' yetarli emas. Sizning balansingiz: {balance} so'm."
+
+msgid "withdrawal-request-sent"
+msgstr "✅ So'rovingiz qabul qilindi va tekshirish uchun adminga yuborildi. Tez orada sizga javob beramiz."
+
+msgid "button-pending-withdrawals"
+msgstr "💸 Pul yechish so'rovlari"
+
+msgid "no-pending-withdrawals"
+msgstr "✅ Tekshiruvni kutayotgan pul yechish so'rovlari mavjud emas."
+
+msgid "payment-approved-user-notification"
+msgstr "✅ Tabriklaymiz! Sizning {amount} so'm pul yechish so'rovingiz tasdiqlandi. Tez orada mablag' kartangizga tushadi."
+
+msgid "payment-rejected-user-notification"
+msgstr "❌ Afsuski, sizning {amount} so'm pul yechish so'rovingiz rad etildi. Qo'shimcha ma'lumot uchun admin bilan bog'laning."
+
+msgid "ask-for-message-content"
+msgstr "📢 Barcha foydalanuvchilarga yuboriladigan xabarni (matn, rasm, video va hokazo) yuboring."
+
+msgid "message-preview-and-confirmation"
+msgstr "✅ Quyidagi xabar barcha foydalanuvchilarga yuboriladi. Tasdiqlaysizmi?"
+
+msgid "broadcast-started"
+msgstr "🚀 Xabar yuborish boshlandi... Bu biroz vaqt olishi mumkin."
+
+msgid "broadcast-finished"
+msgstr "✅ Xabar yuborish yakunlandi!\n\n👥 Jami foydalanuvchilar: {total_users}\n👍 Muvaffaqiyatli: {successful_sends}\n👎 Xatolik: {failed_sends}"
+
+msgid "broadcast-cancelled"
+msgstr "❌ Xabar yuborish bekor qilindi."
+
+msgid "button-confirm-broadcast"
+msgstr "✅ Yuborish"
+
+msgid "button-cancel-broadcast"
+msgstr "❌ Bekor qilish"
+
+msgid "start-message-command"
+msgstr "Botni ishga tushirish"
+
+msgid "account-message-command"
+msgstr "Hisobim"
+
+msgid "help-message-command"
+msgstr "Yordam va ma'lumot"
+
+
+msgid "api-error"
+msgstr "❗️ Openbudget saytida xatolik yuz berdi. Keyinroq urinib ko'ring."
+
+msgid "api-server-error"
+msgstr "❗️ Openbudget saytida texnik nosozlik yuz berdi. Iltimos, keyinroq urinib ko'ring."
+
+
+
+msgid "withdrawal-cancel-error"
+msgstr "❗️ Pul yechish so'rovi topilmadi yoki uni bekor qilishning iloji yo'q."
+
+msgid "withdrawal-cancelled-message"
+msgstr "❌ Pul yechish so'rovingiz bekor qilindi. Balansingizga qaytarildi."
+
+
+
+msgid "user-blocked-notification"
+msgstr "❗️ Sizning hisobingiz admin tomonidan bloklandi."
+
+msgid "user-unblocked-notification"
+msgstr "✅ Sizning hisobingiz blokdan chiqarildi. Botdan foydalanishda davom etishingiz mumkin."
+
+msgid "button-vote-history"
+msgstr "🗳 Ovozlar tarixi"
+
+msgid "no-votes-found"
+msgstr "❗️ Siz hali biror marta ovoz bermagansiz."
+
+
+
+msgid "ask-project-id"
+msgstr "🗳 Iltimos, ovoz bermoqchi bo'lgan loyiha ID'sini kiriting."
+
+msgid "project-id-invalid"
+msgstr "❌ Loyiha ID'si noto'g'ri. Iltimos, faqat raqamlardan foydalaning."
+
+
+msgid "vote-preview"
+msgstr ""
+"✅ Ovoz berish ma'lumotlari to'g'ri ekanligini tasdiqlang:\n\n"
+"📞 **Telefon raqami:** {phone_number}\n"
+"🗳 **Loyiha ID:** {project_id}\n"
+"🔑 **SMS kod:** {otp_code}\n\n"
+"Ma'lumotlar to'g'ri bo'lsa, '✅ Tasdiqlash' tugmasini bosing."
+
+msgid "vote-cooldown"
+msgstr ""
+"⏳ Uzr, takroriy ovoz berish uchun 24 soat kutishingiz kerak.\n"
+"Qolgan vaqt: {hours} soat, {minutes} daqiqa."
+
+
+msgid "otp-resent-message"
+msgstr "✅ Yangi SMS kodi yuborildi. Iltimos, telefon raqamingizga yuborilgan kodni kiriting."
+
+msgid "button-resend-otp"
+msgstr "🔄 Yana yuborish"
+
+
+msgid "button-admin-user-management"
+msgstr "👥 Foydalanuvchilarni boshqarish"
+
+msgid "no-permission"
+msgstr "❌ Sizda bu amalni bajarish uchun ruxsat yo'q."

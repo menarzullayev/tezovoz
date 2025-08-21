@@ -31,3 +31,14 @@ class I18nButtons:
     BUTTON_ADMIN_STATS = "button-admin-stats"
     BUTTON_ADMIN_MESSAGING = "button-admin-messaging"
     BUTTON_ADMIN_SETTINGS = "button-admin-settings"
+
+    BUTTON_RESEND_OTP = "button-resend-otp"
+
+
+
+    # Admin paneli tugmalari
+    BUTTON_ADMIN_PANEL = "button-admin-panel"
+    BUTTON_ADMIN_STATS = "button-admin-stats"
+    BUTTON_ADMIN_MESSAGING = "button-admin-messaging"
+    BUTTON_ADMIN_SETTINGS = "button-admin-settings"
+    BUTTON_ADMIN_USER_MANAGEMENT = "button-admin-user-management" # Yangi kalit

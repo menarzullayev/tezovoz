@@ -1,3 +1,5 @@
+# app\middlewares\__init__.py
+
 # NEW-118
 from aiogram import Dispatcher
 from sqlalchemy.ext.asyncio import async_sessionmaker, AsyncSession

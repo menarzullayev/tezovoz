@@ -1,9 +1,18 @@
-# NEW-112
+# app/utils/helpers.py
+# FIX-103
 import asyncio
 from functools import wraps
 from typing import Any, Awaitable, Type, Tuple, Callable, Optional, Union, List, Generator
 from loguru import logger
 from aiogram.types import TelegramObject, Message, CallbackQuery, InlineQuery, ChatMemberUpdated, ChatJoinRequest, Update
+
+# NEW-103: Botni ishga tushirishda DB ulanish xatosini ushlash uchun maxsus xato klassi
+class DBConnectionError(Exception):
+    pass
+
+# NEW-103: TelegramNetworkError kabi xatolarni ham ushlash uchun maxsus xato klassi
+class TelegramNetworkError(Exception):
+    pass
 
 def retry_on_exception(retries: int = 3, delay: float = 1.0, exceptions: Tuple[Type[Exception], ...] = (Exception,)):
     """
@@ -20,7 +29,7 @@ def retry_on_exception(retries: int = 3, delay: float = 1.0, exceptions: Tuple[T
                     if i < retries - 1:
                         await asyncio.sleep(delay)
                     else:
-                        logger.error(f"'{func.__name__}' funksiyasi {retries} urinishdan so'ng muvaffaqiyatsiz tugadi.", exc_info=True)
+                        logger.critical(f"'{func.__name__}' funksiyasi {retries} urinishdan so'ng muvaffaqiyatsiz tugadi.", exc_info=True)
                         raise
         return wrapper
     return decorator

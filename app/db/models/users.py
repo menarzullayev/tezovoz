@@ -8,13 +8,6 @@ from sqlalchemy.orm import Mapped, mapped_column, relationship
 from app.db.models.base import Base
 from app.db.models.enums import UserStatusEnum
 
-# Bog'liqliklar uchun to'g'ridan-to'g'i import qilish shart emas
-# from app.db.models.referral import Referral
-# from app.db.models.payment import Payment
-# from app.db.models.balance_history import BalanceHistory
-# from app.db.models.votes import Vote
-# from app.db.models.sessions import VotingSession
-
 class User(Base):
     """
     Bot foydalanuvchilari modeli.
@@ -33,11 +26,11 @@ class User(Base):
     user_status: Mapped[UserStatusEnum] = mapped_column(Enum(UserStatusEnum), default=UserStatusEnum.ACTIVE)
 
     # Barcha bog'liqliklar uchun string forward reference ishlatildi
-    referrals: Mapped[List["Referral"]] = relationship(back_populates="referrer", foreign_keys="Referral.referrer_id")
-    payments: Mapped[List["Payment"]] = relationship(back_populates="user")
-    balance_history: Mapped[List["BalanceHistory"]] = relationship(back_populates="user")
-    votes: Mapped[List["Vote"]] = relationship(back_populates="user")
-    voting_sessions: Mapped[List["VotingSession"]] = relationship(back_populates="user")
+    referrals: Mapped[List["Referral"]] = relationship(back_populates="referrer", foreign_keys="Referral.referrer_id") #type: ignore
+    payments: Mapped[List["Payment"]] = relationship(back_populates="user") #type: ignore
+    balance_history: Mapped[List["BalanceHistory"]] = relationship(back_populates="user") #type: ignore
+    votes: Mapped[List["Vote"]] = relationship(back_populates="user") #type: ignore
+    voting_sessions: Mapped[List["VotingSession"]] = relationship(back_populates="user") #type: ignore
 
     def __repr__(self) -> str:
         return f"<User(id={self.id}, telegram_id={self.telegram_id}, username={self.username})>"

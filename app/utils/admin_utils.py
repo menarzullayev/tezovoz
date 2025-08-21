@@ -1,4 +1,6 @@
-# NEW-109
+# FIX-176
+# app/utils/admin_utils.py
+
 import asyncio
 from typing import List
 from aiogram import Bot
@@ -19,6 +21,16 @@ async def send_admin_notification(bot: Bot, message_text: str) -> None:
             logger.debug(f"Admin ({admin_id})ga xabar yuborildi.")
         except Exception as e:
             logger.error(f"Admin ({admin_id})ga xabar yuborishda xatolik: {e}", exc_info=False)
+
+async def send_user_status_notification(bot: Bot, user_id: int, message_text: str) -> None:
+    """
+    Foydalanuvchiga statusi o'zgarganligi haqida xabar yuboradi.
+    """
+    try:
+        await bot.send_message(chat_id=user_id, text=message_text)
+        logger.info(f"Foydalanuvchi ({user_id})ga statusi haqida xabar yuborildi.")
+    except Exception as e:
+        logger.error(f"Foydalanuvchiga ({user_id}) statusi haqida xabar yuborishda xatolik: {e}", exc_info=False)
 
 def get_admin_ids() -> List[int]:
     """

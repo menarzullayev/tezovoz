@@ -16,3 +16,4 @@ from .balance_history import BalanceHistory
 from .promocode import Promocode
 from .api_error import ApiError
 from .user_activity import UserActivity
+from .manual_submission import ManualSubmission

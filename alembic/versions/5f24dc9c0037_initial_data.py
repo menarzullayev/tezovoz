@@ -1,8 +1,8 @@
-"""Add missing user relationships
+"""Initial data
 
-Revision ID: 51729bd7289f
+Revision ID: 5f24dc9c0037
 Revises: 
-Create Date: 2025-08-20 02:51:47.724390
+Create Date: 2025-08-20 23:53:54.659189
 
 """
 from typing import Sequence, Union
@@ -12,7 +12,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision: str = '51729bd7289f'
+revision: str = '5f24dc9c0037'
 down_revision: Union[str, Sequence[str], None] = None
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
@@ -61,6 +61,16 @@ def upgrade() -> None:
     sa.Column('updated_at', sa.DateTime(timezone=True), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=False),
     sa.PrimaryKeyConstraint('id')
     )
+    op.create_table('manual_submissions',
+    sa.Column('user_id', sa.BigInteger(), nullable=False),
+    sa.Column('telegram_file_id', sa.String(length=255), nullable=False),
+    sa.Column('status', sa.Enum('PENDING', 'APPROVED', 'REJECTED', name='submissionstatusenum'), nullable=False),
+    sa.Column('id', sa.Integer(), nullable=False),
+    sa.Column('created_at', sa.DateTime(timezone=True), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=False),
+    sa.Column('updated_at', sa.DateTime(timezone=True), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=False),
+    sa.PrimaryKeyConstraint('id')
+    )
+    op.create_index(op.f('ix_manual_submissions_status'), 'manual_submissions', ['status'], unique=False)
     op.create_table('notifications',
     sa.Column('message_text', sa.Text(), nullable=False),
     sa.Column('target_user_id', sa.BigInteger(), nullable=True),
@@ -195,6 +205,8 @@ def downgrade() -> None:
     op.drop_index(op.f('ix_promocodes_code'), table_name='promocodes')
     op.drop_table('promocodes')
     op.drop_table('notifications')
+    op.drop_index(op.f('ix_manual_submissions_status'), table_name='manual_submissions')
+    op.drop_table('manual_submissions')
     op.drop_table('faq')
     op.drop_table('contacts')
     op.drop_table('blocked_phones')

@@ -17,6 +17,7 @@ class PaymentStatusEnum(enum.Enum):
     PAID = "paid"
     FAILED = "failed"
     CANCELED = "canceled"
+    REJECTED = "rejected"
 
 class NotificationStatusEnum(enum.Enum):
     """

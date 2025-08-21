@@ -1,5 +1,5 @@
-# NEW-121
 # app/db/session.py
+# FIX-106
 
 from typing import AsyncGenerator, Dict, Any
 from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker, AsyncSession, AsyncEngine
@@ -10,6 +10,7 @@ from app.db.models.base import Base
 
 def create_async_db_engine() -> AsyncEngine:
     """SQLAlchemy Asinxron Engine obyektini yaratadi va qaytaradi."""
+    logger.debug("Debug: Asinxron DB engine yaratishga urinish...")
     engine_args: Dict[str, Any] = {
         "echo": settings.DB_ECHO,
         "future": True
@@ -17,6 +18,7 @@ def create_async_db_engine() -> AsyncEngine:
     
     try:
         engine: AsyncEngine = create_async_engine(settings.DB_URL, **engine_args)
+        logger.debug("Debug: Asinxron DB engine muvaffaqiyatli yaratildi.")
         return engine
     except Exception as e:
         logger.critical(f"Ma'lumotlar bazasi engine'ini yaratishda kutilmagan xatolik: {e}", exc_info=True)
@@ -24,6 +26,7 @@ def create_async_db_engine() -> AsyncEngine:
         exit(1)
 
 engine: AsyncEngine = create_async_db_engine()
+logger.debug("Debug: Global 'engine' obyekti o'rnatildi.")
 
 # --- Asinxron Session Maker obyektini yaratish ---
 AsyncSessionLocal = async_sessionmaker(
@@ -31,6 +34,8 @@ AsyncSessionLocal = async_sessionmaker(
     class_=AsyncSession,
     expire_on_commit=False
 )
+logger.debug("Debug: Global 'AsyncSessionLocal' obyekti o'rnatildi.")
+
 
 async def init_db():
     """
@@ -38,7 +43,9 @@ async def init_db():
     """
     logger.info("Ma'lumotlar bazasi jadvallarini yaratish boshlandi.")
     try:
+        logger.debug("Debug: Engine bilan ulanish va tranzaksiyani boshlash.")
         async with engine.begin() as conn:
+            logger.debug("Debug: create_all buyrug'ini sinxron bajarish.")
             await conn.run_sync(Base.metadata.create_all)
         logger.info("Ma'lumotlar bazasi jadvallari muvaffaqiyatli yaratildi.")
     except SQLAlchemyError as e:

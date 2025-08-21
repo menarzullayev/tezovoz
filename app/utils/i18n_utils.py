@@ -1,4 +1,4 @@
-# FIX-119
+# FIX-102
 # app/utils/i18n_utils.py
 
 from typing import Any, Dict, Optional, Callable, Awaitable
@@ -44,10 +44,11 @@ def setup_i18n_middleware(dp: Dispatcher):
     Babel yordamida I18n middleware'ni sozlaydi va ro'yxatdan o'tkazadi.
     """
     try:
-        # I18n klassi tarjimalarni avtomatik tarzda topadi
+        # FIX-102: Babel asosidagi I18n o'rniga aiogram ning o'zining I18n klassidan foydalanamiz.
         i18n = AiogramI18n(
-            path=str(settings.LOCALES_DIR),
-            default_locale=settings.DEFAULT_LANGUAGE
+            path=settings.LOCALES_DIR,
+            default_locale=settings.DEFAULT_LANGUAGE,
+            domain=settings.I18N_DOMAIN
         )
 
         dp.update.middleware(I18nMiddleware(i18n))

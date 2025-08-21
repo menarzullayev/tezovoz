@@ -1,4 +1,4 @@
-# NEW-119
+# FIX-207
 # app/db/queries/user_crud_queries.py
 
 from typing import Any, Optional
@@ -66,12 +66,11 @@ async def add_user(
             user_status=user_status
         )
         session.add(new_user)
-        # session.commit() va session.refresh() DbSessionMiddleware tomonidan bajariladi
         logger.info(f"Yangi foydalanuvchi qo'shildi: {telegram_id}")
         return new_user
     except Exception as e:
         logger.error(f"Yangi foydalanuvchini qo'shishda xatolik: {e}", exc_info=True)
-        raise # Xatolikni yuqoriga uzatamiz
+        raise
 
 async def update_user(
     session: AsyncSession,
@@ -95,11 +94,14 @@ async def update_user(
             for key, value in kwargs.items():
                 if hasattr(user, key):
                     setattr(user, key, value)
-            # session.commit() va session.refresh() DbSessionMiddleware tomonidan bajariladi
-            logger.info(f"Foydalanuvchi {telegram_id} ma'lumotlari yangilandi.")
+            # Balans o'zgarganda alohida xabar yozish
+            if 'balance' in kwargs:
+                logger.info(f"Admin tomonidan foydalanuvchi {telegram_id} balansi yangilandi. Yangi balans: {kwargs['balance']}")
+            else:
+                logger.info(f"Foydalanuvchi {telegram_id} ma'lumotlari yangilandi.")
             return user
         logger.warning(f"Foydalanuvchi {telegram_id} topilmadi, yangilash mumkin emas.")
         return None
     except Exception as e:
         logger.error(f"Foydalanuvchi ma'lumotlarini yangilashda xatolik: {e}", exc_info=True)
-        raise # Xatolikni yuqoriga uzatamiz
+        raise

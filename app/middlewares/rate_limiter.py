@@ -1,4 +1,4 @@
-# FIX-132
+# FIX-194
 # app/middlewares/rate_limiter.py
 
 import asyncio
@@ -8,6 +8,9 @@ from aiogram.types import TelegramObject
 from loguru import logger
 from app.config.settings import settings
 from app.utils.helpers import extract_user_id
+
+# YANGI: Takroriy ovoz berish uchun cooldown muddatini belgilaymiz (soatda)
+VOTE_COOLDOWN_HOURS = 24
 
 class RateLimitMiddleware(BaseMiddleware):
     def __init__(self, default_cooldown_seconds: float = 0.5):
